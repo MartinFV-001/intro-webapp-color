@@ -1,0 +1,35 @@
+body {
+    background-color: #000; /* Cambia el color de fondo a negro (#000) */
+    color: #000000; /* Cambia el color del texto a blanco (#fff) */
+}
+
+.container {
+    max-width: 600px;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Cambia la sombra a blanco */
+    border-radius: 10px;
+}
+
+.color-preview {
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.hex-code {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #000000; /* Cambia el color del texto a blanco (#fff) */
+}
+
+label,
+.card-title {
+    color: #000000; /* Asegura que el texto de las etiquetas sea blanco (#fff) */
+}
+/* Agrega la clase text-center para centrar el texto dentro de la tarjeta */
+.card {
+    text-align: center;
+}

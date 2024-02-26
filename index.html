@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Selector de Color RGB</title>
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="card p-4">
+        <h1 class="mb-4">Selector de Color RGB</h1>
+
+        <!-- Color Picker -->
+        <div class="form-group">
+            <label for="colorPicker">Selecciona un color:</label>
+            <input type="color" class="form-control" id="colorPicker" value="#000000">
+        </div>
+
+        <!-- Rojo -->
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="redDecimal">Rojo (Decimal):</label>
+                <input type="number" class="form-control" id="redDecimal" min="0" max="255" value="0">
+            </div>
+
+            <div class="form-group col-md-8">
+                <label for="redRange">Rojo (Rango):</label>
+                <input type="range" class="form-control-range" id="redRange" min="0" max="255" value="0">
+            </div>
+        </div>
+
+        <!-- Verde -->
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="greenDecimal">Verde (Decimal):</label>
+                <input type="number" class="form-control" id="greenDecimal" min="0" max="255" value="0">
+            </div>
+
+            <div class="form-group col-md-8">
+                <label for="greenRange">Verde (Rango):</label>
+                <input type="range" class="form-control-range" id="greenRange" min="0" max="255" value="0">
+            </div>
+        </div>
+
+        <!-- Azul -->
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="blueDecimal">Azul (Decimal):</label>
+                <input type="number" class="form-control" id="blueDecimal" min="0" max="255" value="0">
+            </div>
+
+            <div class="form-group col-md-8">
+                <label for="blueRange">Azul (Rango):</label>
+                <input type="range" class="form-control-range" id="blueRange" min="0" max="255" value="0">
+            </div>
+        </div>
+
+        <div class="color-preview mt-3" id="colorBox"></div>
+        <div class="hex-code mt-3" id="hexCode"></div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
